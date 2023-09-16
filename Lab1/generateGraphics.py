@@ -18,7 +18,7 @@ if __name__ == "__main__":
         file = f"{FILE_PATH}{i}.txt"
         results = read_file(file)
         b += 12
-        plt.hist(results, bins=b, edgecolor='black')  
+        plt.hist(results, range=(0.0, max(results)), bins=b, edgecolor='black')  
         plt.title("Histograma de las distancias entre puntos con dimension " + str(i))
         plt.xlabel("Distancia")
         plt.ylabel("Frecuencia")
