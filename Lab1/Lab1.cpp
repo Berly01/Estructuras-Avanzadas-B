@@ -52,7 +52,7 @@ auto random_points(const int& d, const int& n) {
     return vec_points;
 }
 
-//Guarda los resultados obtenidos en un archivo txt para luego ser abirto en python para graficarlo
+//Guarda los resultados obtenidos en un archivo txt para luego ser abierto en python para graficarlo
 void save_result(const std::vector<double>& vec_result, const std::string& file_path) {
 
     std::ofstream out_file(file_path, std::ios::out);
